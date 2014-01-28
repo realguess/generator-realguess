@@ -1,6 +1,16 @@
 {
-  "name": "package",
+  "name": "[short title]",
+  "description": "[Long description.]",
+  "author": {
+    "name": "Joe Doe",
+    "email": "joe@example.com"
+  },
   "version": "0.0.0",
-  "dependencies": {}
+  "template": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "modernizer": "2.6.2",
+    "jquery": "1.8.3",
+    "bootstrap": "2.2.2"
+  }
 }
-

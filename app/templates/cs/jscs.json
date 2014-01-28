@@ -1,0 +1,47 @@
+{
+  "requireCurlyBraces": [
+    "if", "else",
+    "for", "while", "do",
+    "try", "catch"
+  ],
+  "requireSpaceAfterKeywords": [
+    "if", "else",
+    "for", "while", "do",
+    "switch",
+    "return",
+    "try", "catch"
+  ],
+  "requireParenthesesAroundIIFE": true,
+  "requireCamelCaseOrUpperCaseIdentifiers": true,
+  "requireRightStickedOperators": [
+    "!"
+  ],
+  "requireLeftStickedOperators": [
+    ","
+  ],
+  "requireLineFeedAtFileEnd": true,
+  "disallowEmptyBlocks": true,
+  "disallowLeftStickedOperators": [
+    "?", "+", "-", "/", "*", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<="
+  ],
+  "disallowRightStickedOperators": [
+    "?", "+", "/", "*", ":", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<="
+  ],
+  "disallowMixedSpacesAndTabs": true,
+  "disallowImplicitTypeConversion": [
+    "string"
+  ],
+  "disallowKeywords": [
+    "with"
+  ],
+  "disallowKeywordsOnNewLine": [
+    "else"
+  ],
+  "excludeFiles": [
+    "test/data/*.js"
+  ],
+  "validateJSDoc": {
+    "checkParamNames": true,
+    "requireParamTypes": true
+  }
+}

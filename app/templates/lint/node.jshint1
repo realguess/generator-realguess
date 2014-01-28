@@ -3,7 +3,6 @@
 , "maxdepth"     : 3
 , "maxstatements": 30
 , "maxcomplexity": 10
-, "indent"       : 2
 , "bitwise"      : true
 , "curly"        : true
 , "eqeqeq"       : true
@@ -21,4 +20,5 @@
 , "trailing"     : true
 , "laxcomma"     : true
 , "node"         : true
+, "es5"          : true
 }

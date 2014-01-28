@@ -20,5 +20,6 @@
 , "strict"       : true
 , "trailing"     : true
 , "laxcomma"     : true
-, "node"         : true
+, "browser"      : true
+, "jquery"       : true
 }

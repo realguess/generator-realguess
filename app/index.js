@@ -1,6 +1,16 @@
+// Yeoman Generator
+// ================
+//
+// Usage: `mkdir proj && cd - && yo realguess`
+//
+// > (c) 2014 Chao Huang <chao@realguess.net>
+
 'use strict';
-var util = require('util');
-var path = require('path');
+
+// Module Dependencies
+// ===================
+var util   = require('util');
+var path   = require('path');
 var yeoman = require('yeoman-generator');
 
 
@@ -8,6 +18,8 @@ var RealguessGenerator = module.exports = function RealguessGenerator(args, opti
   yeoman.generators.Base.apply(this, arguments);
 
   this.on('end', function () {
+    //console.log(this.options);
+    options['skip-install'] = true;
     this.installDependencies({ skipInstall: options['skip-install'] });
   });
 
@@ -24,27 +36,25 @@ RealguessGenerator.prototype.askFor = function askFor() {
 
   var prompts = [{
     type: 'confirm',
-    name: 'someOption',
+    name: 'json spaces',
     message: 'Would you like to enable this option?',
     default: true
   }];
 
-  this.prompt(prompts, function (props) {
-    this.someOption = props.someOption;
+  // TODO: Author field (package.json and copyright), name, email and URL
+  // TODO: Whether this is a pubic or private (default) package.
 
+  this.prompt(prompts, function (props) {
+    this.settings = props;
     cb();
   }.bind(this));
 };
 
 RealguessGenerator.prototype.app = function app() {
-  this.mkdir('app');
-  this.mkdir('app/templates');
-
-  this.copy('_package.json', 'package.json');
-  this.copy('_bower.json', 'bower.json');
+  this.template('_package.json', 'package.json');
 };
 
 RealguessGenerator.prototype.projectfiles = function projectfiles() {
-  this.copy('editorconfig', '.editorconfig');
-  this.copy('jshintrc', '.jshintrc');
+  //this.copy('editors/editorconfig', '.editorconfig');
+  //this.copy('lint/jshintrc', '.jshintrc');
 };
