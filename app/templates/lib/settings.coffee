@@ -19,7 +19,7 @@ yaml = require 'js-yaml'
 env  = require './env'
 
 # Load default settings.
-settings = require '../config/default'
+settings = require('../config/default') or {}
 
 # Add environment.
 settings.env = env
