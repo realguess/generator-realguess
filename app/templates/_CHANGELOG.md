@@ -3,7 +3,7 @@ Change Log
 
 Note that all dates are UTC.
 
-> (c) 2014 Example, Inc. <info@example.com>
+> (c) <%= new Date().getFullYear() %> <%= pkg.author.name %> <<%= pkg.author.email %>>
 
 
 v0.1.0, YYYY-MM-MM

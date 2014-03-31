@@ -3,9 +3,9 @@
   "description": "[Long description.]",
   "keywords": ["foo", "bar"],
   "author": {
-    "name": "Example, Inc.",
-    "email": "info@example.com",
-    "url": "https://github.com/<%= appname %>"
+    "name" : "<%= pkg.author.name  %>",
+    "email": "<%= pkg.author.email %>",
+    "url"  : "<%= pkg.author.url   %>"
   },
   "version": "0.0.0",
   "template": "0.3.0",

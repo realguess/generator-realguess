@@ -9,7 +9,7 @@
 #     # Production usage:
 #     $ ENV=production coffee app.coffee
 #
-# TODO: Add copyright and author info.
+# > (c)
 
 'use strict'
 

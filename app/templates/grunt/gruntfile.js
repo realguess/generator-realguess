@@ -1,7 +1,7 @@
 // Gruntfile
 // =========
 //
-// > (c) 2014 [Joe Doe] <joe@example.com>
+// > (c)
 
 'use strict';
 

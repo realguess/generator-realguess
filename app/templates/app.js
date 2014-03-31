@@ -1,5 +1,7 @@
 // Application
 // ===========
+//
+// > (c)
 
 'use strict';
 

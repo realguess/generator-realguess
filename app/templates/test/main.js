@@ -1,5 +1,7 @@
 // Vows.js Template
 // ================
+//
+// > (c)
 
 'use strict';
 

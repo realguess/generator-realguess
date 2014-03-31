@@ -1,5 +1,7 @@
-[Name]
-======
+<%= _.slugify(appname).toUpperCase() %> 
+<%= new Array(_.slugify(appname).length + 1).join('=') %> 
+
+> (c) <%= new Date().getFullYear() %> <%= pkg.author.name %> <<%= pkg.author.email %>>
 
 [name] [application|module].
 
@@ -17,6 +19,7 @@ Requirements
 List of requirements:
 
 -  Node 0.10.x
+-  CoffeeScript 1.6.x
 -  Others
 
 
@@ -41,23 +44,23 @@ Usage
 
 Development:
 
-    coffee app
+    coffee app.coffee
 
 Testing:
 
-    ENV=testing coffee app
+    ENV=testing coffee app.coffee
 
 Staging:
 
-    ENV=staging coffee app
+    ENV=staging coffee app.coffee
     
 Production:
 
-    ENV=production coffee app
+    ENV=production coffee app.coffee
 
 To provide a custom credential file (YAML):
 
-    ENV=production CREDENTIAL=/path/to/credential.yml coffee app
+    ENV=production CREDENTIAL=/path/to/credential.yml coffee app.coffee
 
 
 Code Quality
@@ -103,9 +106,3 @@ To preview the Markdown document, use one of the following online tools:
 
 - [EpicEditor](http://epiceditor.com/)
 - [Showdown](http://www.showdown.im/)
-
-
-License
-=======
-
-> (c) 2014 Example, Inc. <info@example.com>
