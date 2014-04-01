@@ -12,7 +12,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:example/<%= _.slugify(appname) %>.git"
+    "url": "git@bitbucket.org:<%= options['bitbucket-username'] || 'example' %>/<%= _.slugify(appname) %>.git"
   },
   "dependencies": {
     "underscore": "~1.5.2",
