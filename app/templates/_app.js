@@ -8,7 +8,9 @@
 
 // Module Dependencies
 // ===================
+var settings = require('./lib/settings');
 
 
 // Main
 // ====
+console.log(settings);

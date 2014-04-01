@@ -8,7 +8,9 @@
 
 # Module Dependencies
 # ===================
+settings = require './lib/settings'
 
 
 # Main
 # ====
+console.log settings
