@@ -38,7 +38,7 @@ load   = require('js-yaml').safeLoad
 env    = require './env'
 
 # Set configurations.
-configDir = "#{process.cwd()}/config"
+configDir = "../config"
 options   = { encoding: 'utf8' }
 settings  = {}
 

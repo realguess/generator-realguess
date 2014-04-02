@@ -12,7 +12,7 @@ load = require('js-yaml').safeLoad;
 
 env = require('./env');
 
-configDir = "" + (process.cwd()) + "/config";
+configDir = "../config";
 
 options = {
   encoding: 'utf8'
