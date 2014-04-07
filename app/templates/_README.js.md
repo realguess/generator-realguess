@@ -27,15 +27,15 @@ Install
 
 Clone the repository:
 
-    git clone git+ssh://path/to/repos.git
+    $ git clone git+ssh://path/to/repos.git
 
 Development:
 
-    npm install
+    $ npm install
 
 Production:
 
-    npm install --production
+    $ npm install --production
 
 
 Usage
@@ -43,23 +43,19 @@ Usage
 
 Development:
 
-    coffee app
+    $ coffee app
 
 Testing:
 
-    ENV=testing coffee app
+    $ ENV=testing coffee app
 
 Staging:
 
-    ENV=staging coffee app
+    $ ENV=staging coffee app
     
 Production:
 
-    ENV=production coffee app
-
-To provide a custom credential file (YAML):
-
-    ENV=production CREDENTIAL=/path/to/credential.yml coffee app
+    $ ENV=production coffee app
 
 
 Code Quality
@@ -67,11 +63,11 @@ Code Quality
 
 Run [JSHint][] code quality tool:
 
-    grunt lint
+    $ grunt lint
 
 Run on individual file:
 
-    jshint script.js
+    $ jshint script.js
 
 See `.jshintrc` in the application root directory for options.
 
@@ -81,11 +77,11 @@ See `.jshintrc` in the application root directory for options.
 Test
 ====
 
-    npm test
+    $ npm test
 
 Make sure have [Vows][] installed:
 
-    sudo npm install -g vows
+    $ sudo npm install -g vows
 
 [vows]: http://vowsjs.org/
 
