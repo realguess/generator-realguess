@@ -1,7 +1,7 @@
 // GitHub Gist Sub-Generator
 // =========================
 //
-// Usage: `$ yo realguess:gist 'mygist'
+// Usage: `$ yo realguess:gist 'mygist'`
 //
 // TODO
 // ----
@@ -13,17 +13,12 @@
 
 'use strict';
 
-var yeoman = require('yeoman-generator');
 var util   = require('util');
+var yeoman = require('yeoman-generator');
 
-// Define generator prototype.
-function GistGenerator(args, options, config) {
-  yeoman.generators.NamedBase.apply(this, arguments);
-}
+var GistGenerator = yeoman.generators.NamedBase.extend({
+  files: function files() {
+    this.template('gist.js', this.name + '.js');
+  },
+});
 module.exports = GistGenerator;
-util.inherits(GistGenerator, yeoman.generators.NamedBase);
-
-// Generator Gist files.
-GistGenerator.prototype.files = function files() {
-  this.template('gist.js', this.name + '.js');
-};
