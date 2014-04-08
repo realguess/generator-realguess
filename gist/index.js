@@ -18,7 +18,9 @@ var yeoman = require('yeoman-generator');
 
 var GistGenerator = yeoman.generators.NamedBase.extend({
   files: function files() {
-    this.template('gist.js', this.name + '.js');
+    // TODO: Ability to select different gist file.
+    //this.template('gist.js', this.name + '.js');
+    this.template(this.name + '.js', this.name + '.js');
   },
 });
 module.exports = GistGenerator;
